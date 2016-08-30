@@ -30,3 +30,8 @@ function(){} // functions
 "Wed Aug 24 2016 20:38:48 GMT-0600 (MDT)" // Date
 \[a-z,1-9]\/g // Regex
 
+//Terminal    clear     heroku create (gives server)
+//Terminal    heroku rename kricket
+//Terminal 
+
+//Push commit - find folder (ls) into folder (cd folder name)
