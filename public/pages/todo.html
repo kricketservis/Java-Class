@@ -9,16 +9,12 @@
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
   <title>Todo App</title>
-    <!-- {{#isProd env}}
-    <link rel="stylesheet" type="text/css" href="/dist/app.css" />
-    {{/isProd}} -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/style/todo.css" />
-    <script src="/dist/modernizr-custom.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
+  <link rel="stylesheet" type="text/css" href="/dist/app.css" />
+  <script src="/dist/modernizr-custom.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
   <body>
     <main class="todo-container">
       <div class="row">
@@ -29,33 +25,32 @@
       <div class="row add-todo-row">
         <div class="col-sm-1"></div>
         <div class="col-sm-9">
-          <input type="text" class="form-control add-input"/></div>
-          <div class="col-sm-2">
-            <button class="btn btn-primary btn-add">Add</b>
-            </div>
-          </div>
-          <div class="row todo-list"></div>
+          <input type="text" class="form-control add-input"/>
         </div>
-      </main>
-      <script type="text/x-template">
-        <div class="todo">
-          <div class="col-sm-1">{{id}}</div>
-          <div class="col-sm-7">{{ title }}</div>
-          <div class="col-sm-1">
-            {{#if completed}}
-            <input type="checkbox" checked>
-            {{else}}
-            <input type="checkbox">
-            {{/if}}
-          </div>
-          <div class="col-sm-2"><button class= btn>edit</button></div>
-          <div class="col-sm-1">
-            <button type="button" class="close" aria-label="Close">
-              <span aria-hidden="true">&times;</span></button>
-            </div>
-          </div>
-        </script>
-        <script src="/dist/app.js">   
-        </script>
-      </body>
-      </html>
+        <div class="col-sm-2">
+          <button class="btn btn-primary btn-add">Add</b>
+        </div>
+      </div>
+      <div class="row todo-list"></div>
+    </main>
+    <script type="text/x-template">
+      <div class="todo">
+        <div class="col-sm-1">{{id}}</div>
+        <div class="col-sm-7">{{ title }}</div>
+        <div class="col-sm-1">
+          {{#if completed}}
+          <input type="checkbox" checked>
+          {{else}}
+          <input type="checkbox">
+          {{/if}}
+        </div>
+        <div class="col-sm-2"><button class= btn>edit</button></div>
+        <div class="col-sm-1">
+          <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+        </div>
+      </div>
+    </script>
+    <script src="/dist/app.js"></script>
+  </body>
+</html>

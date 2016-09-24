@@ -5,25 +5,24 @@ var Handlebars = window.Handlebars;
 import lscache from 'lscache';
 
 
-  
-  var database = [];
-  var model = {
-    init: function(){
-      var savedData = lscache.get('todos');
-      if (savedData){
-        database = savedData;
-      } else {
-        database = [];
-      }
-    },
-    save: function(){
-      var dataToSave = JSON.stringify(database);
-      lscache.set('todos', dataToSave);
-    },
-    get: function(){
-      return database;
-    },
-  };
+var database = [];
+var model = {
+  init: function(){
+    var savedData = lscache.get('todos');
+    if (savedData){
+      database = savedData;
+    } else {
+      database = [];
+    }
+  },
+  save: function(){
+    var dataToSave = JSON.stringify(database);
+    lscache.set('todos', dataToSave);
+  },
+  get: function(){
+    return database;
+  },
+};
   
   
 var view = $('script[type="text/x-template"]').html();
@@ -54,7 +53,7 @@ var controller = {
       item.id = index + 1;
       var renderedTodo = controller.compiledTemplate(item);
       compiledTodos.push(renderedTodo);      
-  });
+    });
     controller.render(compiledTodos);
     model.save();
   },
@@ -70,20 +69,20 @@ var controller = {
   },
   removeHandler:function(event){
     // which one was clicked?
-  var index = $(event.currentTarget).parent().parent().index();  
+    var index = $(event.currentTarget).parent().parent().index();  
     // update the database 
-  model.get().splice(index, 1); 
+    model.get().splice(index, 1); 
     // update the view
-  controller.renderTemplates();
+    controller.renderTemplates();
   },
   checkedHandler: function(event){
     // which checkbox?
-  var index = $(event.currentTarget).parent().parent().index(); 
+    var index = $(event.currentTarget).parent().parent().index(); 
     // update the database
-  model.get()[index].completed = !model.get()[index].completed;
+    model.get()[index].completed = !model.get()[index].completed;
     // view updates automatically, yay HTML!
-  model.save();  
-},  
+    model.save();  
+  },  
 
   addTodoHandler: function(){
     var newTitle = $('.add-input').val();
@@ -94,7 +93,7 @@ var controller = {
     });
     $('.add-input').val(''); // Getter and setter - when you don't provide an argument it gets information and when you do provide an argument it sets information
     controller.renderTemplates();
-}
+  }
 };
   
 module.exports = controller; 
