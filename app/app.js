@@ -11,6 +11,9 @@ import './stylesheets/base.scss';
 import _ from 'underscore';
 import todoController from './pages/todo';
 import d3Controller from './pages/newpage';
+import canvas3D from './pages/threeExample';
+
+
 // import multimediaController from './pages/multimedia';
 // on document load
 $(function(){
@@ -32,7 +35,9 @@ $(function(){
     console.log('multimedia page started');
   } else if (window.location.pathname === '/pages/newpage.html') {
     d3Controller.init();
-  }
+  } else if (window.location.pathname === '/pages/threeExample.html') {
+    canvas3D.init(); 
+  } 
   
 
 
