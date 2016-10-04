@@ -38,7 +38,11 @@ $(function(){
   } else if (window.location.pathname === '/pages/threeExample.html') {
     canvas3D.init(); 
   } 
-  
 
+  console.log('Hire me! Email me! Visit me! ');
+  console.log('kricket.servis@gmail.com');
+  console.log('http://www.kricketservis.com/');
 
 });
+
+
