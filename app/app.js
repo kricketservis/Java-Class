@@ -18,6 +18,7 @@ import canvas3D from './pages/threeExample';
 // on document load
 $(function(){
 
+  // kick of the app!
   console.log('%c App Started', 'color:green');
 
   // set default template settings
@@ -27,22 +28,27 @@ $(function(){
     escape:      /{{=([\s\S]+?)}}/g
   };
 
-  // kick of the app!
-  // which page are we on??
-  if (window.location.pathname === '/pages/todo.html') {
-    todoController.init();
-  } else if (window.location.pathname === '/pages/multimedia.html') {
-    console.log('multimedia page started');
-  } else if (window.location.pathname === '/pages/newpage.html') {
-    d3Controller.init();
-  } else if (window.location.pathname === '/pages/threeExample.html') {
-    canvas3D.init(); 
-  } 
 
-  console.log('Hire me! Email me! Visit me! ');
+  // My First Router: Which page are we on??
+  switch(window.location.pathname){
+  case '/pages/todo.html': 
+    todoController.init(); 
+    break;
+  case '/pages/multimedia.html': 
+    console.log('multimedia page started');
+    break;
+  case 'pages/newpage.html': 
+    d3Controller.init();
+    break;
+  case '/pages/threeExample.html': 
+    canvas3D.init();  
+    break;
+  }
+
+  console.log('******************************');
+  console.log('Hire me!');
   console.log('kricket.servis@gmail.com');
   console.log('http://www.kricketservis.com/');
+  console.log('******************************');
 
 });
-
-
