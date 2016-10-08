@@ -33,18 +33,15 @@ var controller = {
 
   renderTemplates: function(){
     // start everything up 
-    var compiledTodos = [];
     // get the database
     // loop over each iten in the database
-    model.get().forEach(function(item, index){ 
+    var compiledTodos = model.get().map(function(item, index){ 
        // create an id equal to index + 1
        // the + 1 is to make more human readable, not start at 0
        // ID is required by our view
       item.id = index + 1;
       // Replace {{id}} with the items id value
-      var renderedTodo = controller.compiledTemplate(item);
-      // add this rendered todo with our list of todos
-      compiledTodos.push(renderedTodo);      
+      return controller.compiledTemplate(item);  
     }); // end of forEach
     // Pass list of todos to the render function
     controller.render(compiledTodos);

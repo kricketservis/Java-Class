@@ -9,6 +9,7 @@ require('bootstrap');
 // import our styles
 import './stylesheets/base.scss';
 import _ from 'underscore';
+import navbar from './components/navbar';
 import todoController from './pages/todo';
 import d3Controller from './pages/newpage';
 import canvas3D from './pages/threeExample';
@@ -28,7 +29,8 @@ $(function(){
     escape:      /{{=([\s\S]+?)}}/g
   };
 
-
+  // launch navbar
+  navbar.init();
   // My First Router: Which page are we on??
   switch(window.location.pathname){
   case '/pages/todo.html': 
@@ -37,7 +39,7 @@ $(function(){
   case '/pages/multimedia.html': 
     console.log('multimedia page started');
     break;
-  case 'pages/newpage.html': 
+  case '/pages/newpage.html': 
     d3Controller.init();
     break;
   case '/pages/threeExample.html': 
