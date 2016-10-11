@@ -56,10 +56,17 @@ var controller = {
   // add the event handlers
   createEventHandlers: function(){
     controller.addButton.on('click', controller.addTodoHandler);
+    $('.add-input').on('keypress', controller.addTodoKeypress);
     $('input[type="checkbox"]').on('change', controller.checkedHandler);
     $('.close').on('click', controller.removeHandler); // Two properties: name of event and function that handles event
     // edit button handler
     $('.edit').on('click', controller.editHandler);
+  },
+  addTodoKeypress: function(event){
+    if (event.which === 13) {
+      // they hit enter!
+      controller.addTodoHandler(event);
+    }
   },
   // event handler for the edit button
   editHandler: function(event){
