@@ -13,7 +13,7 @@ import navbar from './components/navbar';
 import todoController from './pages/todo';
 import d3Controller from './pages/newpage';
 import canvas3D from './pages/threeExample';
-
+import bbTodoController from './pages/bb_todo';
 
 // import multimediaController from './pages/multimedia';
 // on document load
@@ -35,6 +35,9 @@ $(function(){
   switch(window.location.pathname){
   case '/pages/todo.html': 
     todoController.init(); 
+    break;
+  case '/pages/bb_todo.html': 
+    new bbTodoController(); 
     break;
   case '/pages/multimedia.html': 
     console.log('multimedia page started');
