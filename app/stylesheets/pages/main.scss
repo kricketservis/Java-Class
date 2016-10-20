@@ -1,0 +1,44 @@
+.background {
+  height: 100vh;
+/*  margin-top: 75px;*/
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+  url(http://www.kricketservis.com/uploads/1/2/9/6/12969496/7207215_orig.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;*/
+  z-index: 0;
+}
+
+.navbar {
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.info {
+  position: absolute;
+  margin-top: 90px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.scroll {
+  height: 100vh;
+  background: url(http://www.kricketservis.com/uploads/1/2/9/6/12969496/5678032_orig.jpg) no-repeat center top fixed;
+  background-size: cover;
+  z-index: 2;
+}
