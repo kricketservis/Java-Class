@@ -1,13 +1,29 @@
 .background {
   height: 100vh;
-/*  margin-top: 75px;*/
   background: 
-  url('/images/mtn.jpg') no-repeat center top fixed;
+  url('/images/peru.jpg') no-repeat center top fixed;
   background-size: cover;
 /*  -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;*/
   z-index: 0;
+}
+
+#top {
+  background-color: #DAF7A6;
+  opacity: .5;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 10px 10px;
+  height: 48px;
+  font-size: 16px;
+  text-align: center;
+}
+
+a:hover {
+color: silver;
 }
 
 .navbar {
@@ -41,3 +57,5 @@
   background-size: cover;
   z-index: 2;
 }
+
+

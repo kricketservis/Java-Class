@@ -13,6 +13,7 @@ import todoController from './pages/todo';
 import d3Controller from './pages/newpage';
 import canvas3D from './pages/threeExample';
 import bbTodoController from './pages/bb_todo';
+import rTodoController from './pages/r_todo';
 
 // import multimediaController from './pages/multimedia';
 // on document load
@@ -27,6 +28,9 @@ $(function(){
   switch(window.location.pathname){
   case '/pages/todo.html': 
     todoController.init(); 
+    break;
+  case '/pages/r_todo.html': 
+    new rTodoController(); 
     break;
   case '/pages/bb_todo.html': 
     new bbTodoController(); 
