@@ -1,61 +1,280 @@
-.background {
-  height: 100vh;
-  background: 
-  url('/images/peru.jpg') no-repeat center top fixed;
-  background-size: cover;
-/*  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;*/
-  z-index: 0;
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-family: century gothic;
+  font-size: 24px;
+  font-weight: 200;
+  color: silver;
+  z-index: 8;
 }
 
-#top {
-  background-color: #DAF7A6;
-  opacity: .5;
-  position: relative;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  padding: 10px 10px;
-  height: 48px;
+.container {
+  font-family: century gothic;
   font-size: 16px;
-  text-align: center;
+  position: fixed; 
+  top: 45%; 
+  left: 48%;
+  color: gray; 
+  z-index: 7;
 }
-
 a:hover {
 color: silver;
 }
 
-.navbar {
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  animation-duration:2s;
+}
+
+#background-wrap {
+  bottom: 0;
+  left: 0;
+  padding-top: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@-webkit-keyframes animateCloud {
+    0% {margin-left: -1000px;}
+    100% {margin-left: 100%;}
+}
+
+@-moz-keyframes animateCloud {
+    0% {margin-left: -1000px;}
+    100% {margin-left: 100%;}
+}
+@keyframes animateCloud {
+    0% {margin-left: -1000px;}
+    100% {margin-left: 100%;}
+}
+
+/* ANIMATIONS */
+.x1 {
+  -webkit-animation: animateCloud 30s linear infinite;
+  -moz-animation: animateCloud 30s linear infinite;
+  animation: animateCloud 30s linear infinite;
+  -webkit-transform: scale(0.35);
+  -moz-transform: scale(0.35);
+  transform: scale(0.35);
+}
+
+.x2 {
+  -webkit-animation: animateCloud 20s linear infinite;
+  -moz-animation: animateCloud 20s linear infinite;
+  animation: animateCloud 20s linear infinite;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+.x3 {
+  -webkit-animation: animateCloud 30s linear infinite;
+  -moz-animation: animateCloud 30s linear infinite;
+  animation: animateCloud 30s linear infinite;
+  -webkit-transform: scale(0.2);
+  -moz-transform: scale(0.2);
+  transform: scale(0.2);
+}
+
+.x4 {
+  -webkit-animation: animateCloud 18s linear infinite;
+  -moz-animation: animateCloud 18s linear infinite;
+  animation: animateCloud 18s linear infinite;
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  transform: scale(0.4);
+}
+
+.x5 {
+  -webkit-animation: animateCloud 25s linear infinite;
+  -moz-animation: animateCloud 25s linear infinite;
+  animation: animateCloud 25s linear infinite;
+  -webkit-transform: scale(0.15);
+  -moz-transform: scale(0.15);
+  transform: scale(0.15);
+}
+
+/* OBJECTS */
+.cloud {
+  background: #fff;
+  background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
+  background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+  background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+  background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+  background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+  height: 100px;
   position: relative;
+  width: 300px;
 }
 
-.name {
+.cloud:after, .cloud:before {
+  background: #fff;
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  z-indeX: -1;
 }
 
-.info {
+.cloud:after {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  height: 100px;
+  left: 50px;
+  top: -50px;
+  width: 100px;
+}
+
+.cloud:before {
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+  width: 180px;
+  height: 180px;
+  right: 50px;
+  top: -90px;
+}
+
+.triangles div {
   position: absolute;
-  margin-top: 90px;
-  top: 50%;
+  opacity: -1;
+  width: 0; 
+  height: 0;
+  bottom: 450px;
+}
+
+.triangle1 {
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 150px solid pink; 
+  z-index: 3;
 }
 
-.link1 {
-  background-color: blue;
+.triangle2 {
+  left: 48%;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 125px solid navy;
 }
 
-.scroll {
-  height: 100vh;
-  background: url(http://www.kricketservis.com/uploads/1/2/9/6/12969496/5678032_orig.jpg);
-  background-size: cover;
+.triangle3 {
+  left: 51%;
+  border-left: 40px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 150px solid silver;
+  z-index: 0;
+}
+
+.triangle4 {
+  left: 54%;
+  border-left: 40px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 150px solid teal;
+}
+
+.triangle5 {
+  left: 45%;
+  border-left: 40px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 150px solid teal;
   z-index: 2;
+}
+
+.triangle6 {
+  left: 41%;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 150px solid silver;
+  z-index: 0;
+}
+
+.triangle7 {
+  left: 42%;
+  border-left: 40px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 150px solid teal;
+}
+
+.triangle8 {
+  left: 56%;
+  border-left: 40px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 150px solid navy;
+}
+
+.triangle9 {
+  left: 40%;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 150px solid navy; 
+  z-index: 4;
+}
+
+.triangle10 {
+  left: 48%;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 150px solid silver;
+  z-index: 5;
+}
+
+.triangle11 {
+  left: 42%;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 125px solid pink;
+}
+
+.triangle12 {
+  left: 58%;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 125px solid pink;
+  z-index: 6;
+}
+
+.triangle13 {
+  left: 60%;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 125px solid teal;
+}
+
+.triangle14 {
+  left: 37%;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 125px solid silver;
+}
+
+body {
+  background: #DAF7A6;
 }
 
 
