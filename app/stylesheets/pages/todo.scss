@@ -24,7 +24,7 @@
   font-size: 28px;
   padding: 10px 0px 10px 35px;
   height: 55px;
-  &.complete .todo-title {
+  &.completed .todo-title {
     text-decoration: line-through;
     color: #6a6880;
   }
