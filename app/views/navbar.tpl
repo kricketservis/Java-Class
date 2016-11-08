@@ -1,6 +1,6 @@
 <ul>
   <li>
-    <a href="/">Home Page</a>
+    <a href="/">Enter</a>
   </li>
   <li>
     <a href="/pages/todo.html">jQuery Todo App</a>
