@@ -138,19 +138,18 @@
   white-space: nowrap;
 }
 
-.btn1:hover {
+.buttons button:hover {
   background-color: #cccccc;
   cursor: pointer;
 }
 
-.btn2:hover {
-  background-color: #cccccc;
-  cursor: pointer;
+.buttons button {
+  transition: transform 600ms;
+  transform: rotateX(0deg);
 }
 
-.btn3:hover {
-  background-color: #cccccc;
-  cursor: pointer;
+.buttons button.animate {
+  transform: rotateX(360deg);
 }
 
 .buttons li {
