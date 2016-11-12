@@ -15,6 +15,7 @@ import canvas3D from './pages/threeExample';
 import bbTodoController from './pages/bb_todo';
 import rTodoController from './pages/r_todo';
 import main from './pages/main';
+// import about from './pages/about';
 
 // import multimediaController from './pages/multimedia';
 // on document load
@@ -48,6 +49,9 @@ $(function(){
   case '/':
     main.init();
     break;
+  // case '/pages/about.html': 
+  //   about.init();  
+  //   break;
   }
 
   console.log('******************************');

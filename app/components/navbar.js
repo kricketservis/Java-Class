@@ -8,7 +8,7 @@ var app = {
     app.render();
   },
   render: function(){
-    $('nav').html(navbarTpl);
+    $('nav.class').html(navbarTpl);
   }
 };
 

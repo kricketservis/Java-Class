@@ -3,6 +3,9 @@
     <a href="/">Enter</a>
   </li>
   <li>
+    <a href="/pages/about.html">about</a>
+  </li>
+  <li>
     <a href="/pages/todo.html">jQuery Todo App</a>
   </li>
   <li>
