@@ -49,7 +49,6 @@
   background-repeat: no-repeat;
   background-size: 1100px;
   background-color: #efefef;
-  border: solid black 1px;
 }
 @media (max-width: 850px){
   .flex-item-1 {
@@ -70,7 +69,6 @@
   flex-shrink: 0;
   flex-basis: 400px;
   background-color: #efefef;
-  border: solid black 1px;
 }
 @media (max-width: 850px){
   .flex-item-2 {
@@ -172,7 +170,7 @@
     top: 14px;
     left: 67px;
     height: 15px;
-    width: 2px;
+    width: 1px;
 }
 
 .foot {

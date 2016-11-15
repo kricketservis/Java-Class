@@ -5,6 +5,9 @@
   <li>
     <a href="/pages/about.html">about</a>
   </li>
+    <li>
+    <a href="/pages/work.html">work</a>
+  </li>
   <li>
     <a href="/pages/todo.html">jQuery Todo App</a>
   </li>

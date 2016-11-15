@@ -16,6 +16,7 @@ import bbTodoController from './pages/bb_todo';
 import rTodoController from './pages/r_todo';
 import main from './pages/main';
 import about from './pages/about';
+import work from './pages/work';
 
 // import multimediaController from './pages/multimedia';
 // on document load
@@ -51,6 +52,9 @@ $(function(){
     break;
   case '/pages/about.html': 
     about.init();  
+    break;
+  case '/pages/work.html': 
+    work.init();  
     break;
   }
 

@@ -1,22 +1,38 @@
-.name {
+.landing-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  font-family: century gothic;
-  font-size: 24px;
-  font-weight: 200;
-  color: silver;
-  z-index: 8;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
-.container {
+.mountains {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 600px; 
+  font-family: century gothic;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 24px;
+  color:  rgba( silver, .7 );
+  z-index: 8;
+}
+@media (max-width: 850px){
+    .mountains {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+.enter {
   font-family: century gothic;
   font-size: 16px;
   position: fixed; 
   top: 45%; 
-  left: 48%;
-  color: gray; 
+  left: 49%;
+  color: #555; 
   z-index: 7;
 }
 a:hover {
@@ -115,18 +131,7 @@ color: silver;
 /* OBJECTS */
 .cloud {
   background: #fff;
-  background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
-  background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-  background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-  background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-  background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
   border-radius: 100px;
-  -webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
   height: 100px;
   position: relative;

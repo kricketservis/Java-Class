@@ -1,0 +1,136 @@
+.work { 
+  margin: 50px;
+  background: rgba( silver, .5 );
+}
+
+.work-title {
+  font-family: Century Gothic, Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  color: #555;
+  font-width: 500;
+  position: relative;
+  top: 10%;
+}
+
+.work-information {
+  font-family: Century Gothic, Helvetica;
+  font-size: 15px;
+  color: #555;
+  position: relative;
+  top: 10%;
+  text-align: left;
+}
+
+.flex-work-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+    
+.flex-work-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 600px;
+  padding: 0 10px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 300px; 
+  background-image: url(/images/babyafrica.jpg);
+  background-repeat: no-repeat;
+  background-size: 950px;
+  background-position: right;
+  background-color: #efefef;
+}
+  @media (max-width: 650px){
+    .flex-work-1 {
+    background-size: 750px;
+    background-position: right;
+    } 
+  }
+  
+.flex-work-2 {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 600px;
+  padding: 0 10px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 300px;
+  background-color: #efefef;
+}
+  @media (max-width: 650px){
+    .flex-work-2 {
+    font-size: 12px;
+    }
+  }
+
+.back1 {
+  font-family: Century Gothic, Helvetica;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #cccccc;
+  color: #555;
+  font-size: 12px;
+  font-weight: 500;
+  height: 50px;
+  width: 135px;
+  letter-spacing: 3px;
+  line-height: 5px;
+  padding: 0 2px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+  top: 20px;
+  left: 15px;
+}
+
+.workback button:hover {
+  background-color: #cccccc;
+  cursor: pointer;
+}
+
+.workback button {
+  transition: transform 600ms;
+  transform: rotateY(0deg);
+}
+
+.workback button.animate {
+  transform: rotateY(360deg);
+}
+
+.workback li {
+  list-style: none;
+  margin: 13px;
+  position: relative;
+  border: 1px;
+  height: 23px;
+}
+
+.workback {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  font-family: Century Gothic, Helvetica;
+  position: relative;
+  margin: 0 auto;
+  bottom: 0;
+  text-align: center;
+  padding: 5px; 
+}
