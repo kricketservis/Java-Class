@@ -50,6 +50,8 @@
   background-size: 950px;
   background-position: right;
   background-color: #efefef;
+  transform: translateY(-10px);
+  transition: transform 1s;
 }
   @media (max-width: 650px){
     .flex-work-1 {
@@ -57,6 +59,10 @@
     background-position: right;
     } 
   }
+
+div.ready {
+  transform: translateY(0px);
+}
   
 .flex-work-2 {
   flex-direction: column;
@@ -69,6 +75,8 @@
   flex-shrink: 0;
   flex-basis: 300px;
   background-color: #efefef;
+  transform: translateY(10px);
+  transition: transform 1s;
 }
   @media (max-width: 650px){
     .flex-work-2 {
@@ -126,7 +134,7 @@
   padding: 0;
 }
 
-footer {
+.foot {
   font-family: Century Gothic, Helvetica;
   position: relative;
   margin: 0 auto;

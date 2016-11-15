@@ -17,6 +17,8 @@ import rTodoController from './pages/r_todo';
 import main from './pages/main';
 import about from './pages/about';
 import work from './pages/work';
+import aspire from './pages/aspire';
+import contact from './pages/contact';
 
 // import multimediaController from './pages/multimedia';
 // on document load
@@ -55,6 +57,12 @@ $(function(){
     break;
   case '/pages/work.html': 
     work.init();  
+    break;
+  case '/pages/aspire.html': 
+    aspire.init();  
+    break;
+  case '/pages/contact.html': 
+    contact.init();  
     break;
   }
 

@@ -9,13 +9,13 @@ var app = {
   render: function(){
     app.createEventHandler();
     setTimeout(function(){
-      $(".flex-work-1").addClass("ready");
-      $(".flex-work-2").addClass("ready");
+      $(".flex-contact-1").addClass("ready");
+      $(".flex-contact-2").addClass("ready");
     }, 200);
   },
 
   createEventHandler: function(){
-    $('.workback button').on('click', function(){
+    $('.contactback button').on('click', function(){
       $(this).addClass('animate'); // after click, button spins vertically twice
       var that = this;
       setTimeout(function(){

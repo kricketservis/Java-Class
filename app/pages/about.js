@@ -8,6 +8,10 @@ var app = {
   
   render: function(){
     app.createEventHandler();
+    setTimeout(function(){
+      $(".flex-item-1").addClass("ready");
+      $(".flex-item-2").addClass("ready");
+    }, 200);
   },
 
   createEventHandler: function(){

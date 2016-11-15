@@ -1,9 +1,9 @@
-.about { 
+.contact { 
   margin: 50px;
   background: rgba( silver, .5 );
 }
 
-.title {
+.contact-title {
   font-family: Century Gothic, Helvetica;
   font-size: 24px;
   font-weight: 500;
@@ -12,18 +12,19 @@
   color: #555;
   font-width: 500;
   position: relative;
-  margin: 0 auto;
+  top: 10%;
 }
 
-.information {
+.contact-information {
   font-family: Century Gothic, Helvetica;
-  font-size: 14px;
+  font-size: 15px;
   color: #555;
   position: relative;
-  text-align: center;
+  top: 10%;
+  text-align: left;
 }
 
-.flex-container {
+.flex-contact-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -32,7 +33,7 @@
   align-items: center;
 }
     
-.flex-item-1 {
+.flex-contact-1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -43,48 +44,47 @@
   padding: 0 10px;
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 400px; 
-  background-image: url(/images/aboutme.jpg);
-  background-position: 100%;
+  flex-basis: 300px; 
+  background-image: url(/images/leaves.jpg);
   background-repeat: no-repeat;
-  background-size: 1100px;
+  background-size: 675px;
+  background-position: center;
   background-color: #efefef;
   transform: translateY(-10px);
   transition: transform 1s;
 }
-@media (max-width: 850px){
-  .flex-item-1 {
+  @media (max-width: 650px){
+    .flex-contact-1 {
+    background-size: 650px;
     background-position: center;
+    } 
   }
-}
-
+  
 div.ready {
   transform: translateY(0px);
 }
-  
-.flex-item-2 {
-  display: flex;
+
+.flex-contact-2 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  align-items: center;
   height: 600px;
   padding: 0 10px;
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 400px;
+  flex-basis: 300px;
   background-color: #efefef;
   transform: translateY(10px);
   transition: transform 1s;
 }
-@media (max-width: 850px){
-  .flex-item-2 {
+  @media (max-width: 650px){
+    .flex-contact-2 {
     font-size: 12px;
+    }
   }
-}
 
-.btn1 {
+.back3 {
   font-family: Century Gothic, Helvetica;
   background-color: transparent;
   border-radius: 8px;
@@ -102,63 +102,26 @@ div.ready {
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+  position: relative;
+  top: 20px;
+  left: 15px;
 }
 
-.btn2 {
-  font-family: Century Gothic, Helvetica;
-  background-color: transparent;
-  border-radius: 8px;
-  border: 0;
-  box-shadow: inset 0 0 0 1px #cccccc;
-  color: #555;
-  font-size: 13px;
-  font-weight: 500;
-  height: 50px;
-  width: 135px;
-  letter-spacing: 2px;
-  line-height: 5px;
-  padding: 0 2px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.btn3 {
-  font-family: Century Gothic, Helvetica;
-  background-color: transparent;
-  border-radius: 8px;
-  border: 0;
-  box-shadow: inset 0 0 0 1px #cccccc;
-  color: #555;
-  font-size: 12px;
-  font-weight: 500;
-  height: 50px;
-  width: 135px;
-  letter-spacing: 3px;
-  line-height: 5px;
-  padding: 0 2px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.buttons button:hover {
+.contactback button:hover {
   background-color: #cccccc;
   cursor: pointer;
 }
 
-.buttons button {
+.contactback button {
   transition: transform 600ms;
-  transform: rotateX(0deg);
+  transform: rotateY(0deg);
 }
 
-.buttons button.animate {
-  transform: rotateX(360deg);
+.contactback button.animate {
+  transform: rotateY(360deg);
 }
 
-.buttons li {
+.contactback li {
   list-style: none;
   margin: 13px;
   position: relative;
@@ -166,26 +129,13 @@ div.ready {
   height: 23px;
 }
 
-.buttons {
+.contactback {
   margin: 0;
   padding: 0;
-
-}
-
-.line1, .line2 {
-    background-color: #cccccc;
-    position: relative;
-    top: 14px;
-    left: 67px;
-    height: 15px;
-    width: 1px;
 }
 
 .foot {
   font-family: Century Gothic, Helvetica;
-  text-decoration: none;
-  font-size: 10px;
-  color: #555;
   position: relative;
   margin: 0 auto;
   bottom: 0;
