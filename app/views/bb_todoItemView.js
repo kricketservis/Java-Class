@@ -31,7 +31,6 @@ var todoItemView = Backbone.View.extend({
     this.$el.find('.save').removeClass('hidden');
     this.$el.find('.todo-title').addClass('hidden');
     this.$el.find('.todo-title-edit').removeClass('hidden');
-
   },
   saveHandler: function(){
     var newTitle = this.$el.find('.todo-title-edit input').val();

@@ -7,10 +7,11 @@ var app = {
   },
   
   render: function(){
+    $('body').css({display: 'block'});
     app.createEventHandler();
     setTimeout(function(){
-      $(".flex-work-1").addClass("ready");
-      $(".flex-work-2").addClass("ready");
+      $('.flex-work-1').addClass('ready');
+      $('.flex-work-2').addClass('ready');
     }, 200);
   },
 

@@ -45,13 +45,14 @@
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 300px; 
-  background-image: url(/images/book.jpg);
+  background-image: url(/images/horse.jpg);
   background-repeat: no-repeat;
-  background-size: 755px;
-  background-position: left;
+  background-size: 1100px;
+  background-position: center;
   background-color: #efefef;
-  transform: translateY(-10px);
-  transition: transform 1s;
+  transform: translateY(-8px);
+  transition: transform .5s, opacity .5s;
+  opacity:0;
 }
   @media (max-width: 650px){
     .flex-aspire-1 {
@@ -62,6 +63,7 @@
 
 div.ready {
   transform: translateY(0px);
+  opacity: 0;
 }
   
 .flex-aspire-2 {
@@ -75,8 +77,12 @@ div.ready {
   flex-shrink: 0;
   flex-basis: 300px;
   background-color: #efefef;
-  transform: translateY(10px);
-  transition: transform 1s;
+  transform: translateY(8px);
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: transform .5s, opacity .5s;
+  opacity:0;
 }
   @media (max-width: 650px){
     .flex-aspire-2 {

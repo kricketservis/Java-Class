@@ -49,8 +49,9 @@
   background-repeat: no-repeat;
   background-size: 1100px;
   background-color: #efefef;
-  transform: translateY(-10px);
-  transition: transform 1s;
+  transform: translateY(-8px);
+  transition: transform .5s, opacity .5s;
+  opacity:0;
 }
 @media (max-width: 850px){
   .flex-item-1 {
@@ -60,6 +61,7 @@
 
 div.ready {
   transform: translateY(0px);
+  opacity: 1;
 }
   
 .flex-item-2 {
@@ -75,8 +77,9 @@ div.ready {
   flex-shrink: 0;
   flex-basis: 400px;
   background-color: #efefef;
-  transform: translateY(10px);
-  transition: transform 1s;
+  transform: translateY(8px);
+  transition: transform .5s, opacity .5s;
+  opacity:0;
 }
 @media (max-width: 850px){
   .flex-item-2 {

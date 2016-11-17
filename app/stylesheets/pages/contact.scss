@@ -24,6 +24,13 @@
   text-align: left;
 }
 
+.contact-information2 {
+  position: relative;
+  top: 25%;
+  color: #555;
+  text-align: center;
+}
+
 .flex-contact-container {
   display: flex;
   flex-direction: row;
@@ -50,8 +57,10 @@
   background-size: 675px;
   background-position: center;
   background-color: #efefef;
-  transform: translateY(-10px);
-  transition: transform 1s;
+  transform: translateY(-8px);
+  transition: transform .5s, opacity .5s;
+  opacity:0;
+
 }
   @media (max-width: 650px){
     .flex-contact-1 {
@@ -62,6 +71,7 @@
   
 div.ready {
   transform: translateY(0px);
+  opacity: 1;
 }
 
 .flex-contact-2 {
@@ -75,8 +85,9 @@ div.ready {
   flex-shrink: 0;
   flex-basis: 300px;
   background-color: #efefef;
-  transform: translateY(10px);
-  transition: transform 1s;
+  transform: translateY(8px);
+  transition: transform .5s, opacity .5s;
+  opacity:0;
 }
   @media (max-width: 650px){
     .flex-contact-2 {
