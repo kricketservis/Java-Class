@@ -45,14 +45,14 @@
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 300px; 
-  background-image: url(/images/horse.jpg);
+  background-image: url(/images/poppies2.jpg);
   background-repeat: no-repeat;
-  background-size: 1100px;
+  background-size: 656px;
   background-position: center;
   background-color: #efefef;
   transform: translateY(-8px);
   transition: transform .5s, opacity .5s;
-  opacity:0;
+  opacity: 0;
 }
   @media (max-width: 650px){
     .flex-aspire-1 {
@@ -63,7 +63,7 @@
 
 div.ready {
   transform: translateY(0px);
-  opacity: 0;
+  opacity: 1;
 }
   
 .flex-aspire-2 {
@@ -78,9 +78,6 @@ div.ready {
   flex-basis: 300px;
   background-color: #efefef;
   transform: translateY(8px);
-  transition: transform .5s;
-  transform-style: preserve-3d;
-  transform: perspective(2000px);
   transition: transform .5s, opacity .5s;
   opacity:0;
 }
