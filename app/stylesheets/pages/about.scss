@@ -20,10 +20,10 @@
   font-size: 14px;
   color: #555;
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
-.flex-container {
+.flex-item-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -33,7 +33,6 @@
 }
     
 .flex-item-1 {
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -53,7 +52,7 @@
   transition: transform .5s, opacity .5s;
   opacity:0;
 }
-@media (max-width: 850px){
+@media (max-width: 650px){
   .flex-item-1 {
     background-position: center;
   }
@@ -81,11 +80,12 @@ div.ready {
   transition: transform .5s, opacity .5s;
   opacity:0;
 }
-@media (max-width: 850px){
+@media (max-width: 650px){
   .flex-item-2 {
     font-size: 12px;
   }
 }
+
 
 .btn1 {
   font-family: Century Gothic, Helvetica;
