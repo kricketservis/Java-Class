@@ -57,12 +57,12 @@
   padding: 0 10px;
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 300px; 
+  flex-basis: 350px; 
   background-image: url(/images/babyafrica.jpg);
   background-repeat: no-repeat;
   background-size: 950px;
   background-position: right;
-  background-color: #efefef;
+  background-color: #555;
   transform: translateY(-8px);
   transition: transform .5s, opacity .5s;
   opacity:0;
@@ -88,7 +88,7 @@ div.ready {
   padding: 0 10px;
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 300px;
+  flex-basis: 350px;
   background-color: #efefef;
   transform: translateY(8px);
   transition: transform .5s, opacity .5s;

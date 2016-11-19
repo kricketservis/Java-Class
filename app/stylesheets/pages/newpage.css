@@ -1,8 +1,14 @@
-line {
-    stroke:rgb(255,105,180);
-    stroke-width:4
+.newpage line {
+    stroke: rgb(255,105,180);
+    stroke-width: 3;
 }
 
-body {
-    margin: 10px;
+.newpage {
+    position: relative;
+    top: 5%;
+    left: 25%;
+    font-family: Century Gothic, Helvetica;
+    font-size: 10px;
+    color: #555;
+
 }

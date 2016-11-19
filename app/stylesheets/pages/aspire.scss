@@ -44,12 +44,11 @@
   padding: 0 10px;
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 300px; 
+  flex-basis: 350px; 
   background-image: url(/images/poppies2.jpg);
   background-repeat: no-repeat;
   background-size: 656px;
   background-position: center;
-  background-color: #efefef;
   transform: translateY(-8px);
   transition: transform .5s, opacity .5s;
   opacity: 0;
@@ -75,7 +74,7 @@ div.ready {
   padding: 0 10px;
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 300px;
+  flex-basis: 350px;
   background-color: #efefef;
   transform: translateY(8px);
   transition: transform .5s, opacity .5s;
@@ -135,6 +134,41 @@ div.ready {
 .aspireback {
   margin: 0;
   padding: 0;
+}
+
+.examples {
+  position: relative;
+  top: 7%;
+  left: 14%;
+  width: 450px;
+  height: 300px;
+  box-shadow: 0px 5px 10px -1px rgba(0,0,0,0.5);
+  z-index: 0;
+}
+
+.illus {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  top: 0px;
+  transition: 1s ease-in-out;
+  background: url(/images/book.jpg);
+  background-size: 450px;
+  background-position: center;
+  z-index: 1;
+}
+
+.examples:hover {
+  .illus {
+    width: 450px;
+    height: 300px;
+    top: 0px;
+    transition: 1s ease-in-out;
+    background: url(/images/baby.png);
+    background-size: 450px;
+    background-position: center;
+    z-index: 2;
+  }
 }
 
 .foot {
